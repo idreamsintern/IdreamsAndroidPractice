@@ -2,6 +2,7 @@ package com.example.idreams.practice.ActionBarTab;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -21,7 +22,13 @@ public class ActionBarTab extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_action_bar_tab);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
+                getApplicationContext()));
 
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     @Override
