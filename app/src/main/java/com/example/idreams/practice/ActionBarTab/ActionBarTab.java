@@ -16,8 +16,12 @@ import android.app.ActionBar.Tab;
 import com.example.idreams.practice.R;
 
 
-public class ActionBarTab extends FragmentActivity {
+public class ActionBarTab extends AppCompatActivity {
 
+
+
+
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +31,10 @@ public class ActionBarTab extends FragmentActivity {
                 getApplicationContext()));
 
         // Give the TabLayout the ViewPager
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+
     }
 
     @Override
