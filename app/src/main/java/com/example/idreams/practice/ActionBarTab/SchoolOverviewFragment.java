@@ -14,7 +14,7 @@ import com.example.idreams.practice.R;
 
 public class SchoolOverviewFragment extends PageFragment {
 
-
+    private TextView mTextView;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class SchoolOverviewFragment extends PageFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_school_overview, container, false);
-        TextView textView = (TextView) view.findViewById(R.id.text_school_overview_fragment);
+        mTextView = (TextView) view.findViewById(R.id.text_school_overview_fragment);
         return view;
     }
 }
