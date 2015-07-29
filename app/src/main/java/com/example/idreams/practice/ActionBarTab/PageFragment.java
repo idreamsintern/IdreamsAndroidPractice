@@ -22,20 +22,27 @@ import com.example.idreams.practice.R;
  */
 public class PageFragment extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
-    private int mPage;
+    private int mPageindex;
 
     public static PageFragment newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
-        PageFragment fragment = new PageFragment();
-        fragment.setArguments(args);
-        return fragment;
+        if(page==1) {
+            SchoolOverviewFragment f = new SchoolOverviewFragment();
+            f.setArguments(args);
+            return f;
+        }
+        else {
+            PageFragment fragment = new PageFragment();
+            fragment.setArguments(args);
+            return fragment;
+        }
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPage = getArguments().getInt(ARG_PAGE);
+        mPageindex = getArguments().getInt(ARG_PAGE);
     }
 
     @Override
@@ -43,7 +50,7 @@ public class PageFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_page, container, false);
         TextView textView = (TextView) view.findViewById(R.id.fragmenttext);
-        textView.setText("Fragment #" + mPage);
+        textView.setText("Fragment #" + mPageindex);
         return view;
     }
 }
