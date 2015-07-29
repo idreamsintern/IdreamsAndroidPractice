@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Practice</string>
+
+    <string name="Practicing">Practicing:</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_recycler_view">RecyclerView</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_bar_chart">BarChartActivity</string>
+    <string name="title_activity_my_seek_bar">MySeekBar</string>
+    <string name="title_activity_my_recycler_view">MyRecyclerView</string>
+    <string name="title_activity_wrap_recycler_view">WrapRecyclerViewActivity</string>
+    <string name="title_activity_action_bar_tab">ActionBarTab</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_first_fragment">FirstFragment</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.idreams.practice" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19"
+        tools:node="merge" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BarChartActivity"
+            android:label="@string/title_activity_bar_chart" >
+        </activity>
+        <activity
+            android:name=".MySeekBar"
+            android:label="@string/title_activity_my_seek_bar" >
+        </activity>
+        <activity
+            android:name=".RecyclerView.MyRecyclerView"
+            android:label="@string/title_activity_my_recycler_view" >
+        </activity>
+        <activity
+            android:name=".ActionBarTab.ActionBarTab"
+            android:label="@string/title_activity_action_bar_tab" >
+        </activity>
+        <activity
+            android:name=".ActionBarTab.FirstFragment"
+            android:label="@string/title_activity_first_fragment" >
+        </activity>
+    </application>
+
+</manifest>
