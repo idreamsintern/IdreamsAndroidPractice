@@ -1,27 +1,20 @@
 package com.example.idreams.practice.ActionBarTab;
 
-import android.app.ActionBar;
-import android.app.FragmentTransaction;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.app.ActionBar.Tab;
+
 import com.example.idreams.practice.R;
 
 
 public class ActionBarTab extends AppCompatActivity {
 
 
-
-
     TabLayout tabLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +26,6 @@ public class ActionBarTab extends AppCompatActivity {
         // Give the TabLayout the ViewPager
         tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
-
-
     }
 
     @Override

@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="100dp"
     android:orientation="horizontal" >
 
     <ImageView
-        android:layout_width="fill_parent"
+        android:layout_width="0px"
         android:layout_height="fill_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:src="@drawable/mit_logo"
         android:layout_weight="1"/>
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_width="0px"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:orientation="vertical">
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/spacing_large"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="0px"
                 android:layout_weight="1"
-                android:text="校徽"/>
+                android:textSize="20dp"
+                android:text="麻繩理工大學"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/spacing_large"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_height="0px"
                 android:layout_weight="1"
-                android:text="地區：洲別"/>
+                android:textSize="20dp"
+                android:text="美國：加州"/>
 
     </LinearLayout>
 

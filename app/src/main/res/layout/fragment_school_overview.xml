@@ -10,26 +10,31 @@
         >
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
-
             <fragment
                 android:id="@+id/intofragment"
                 class="com.example.idreams.practice.ActionBarTab.SchoolOverviewIntroFragment"
                 android:layout_width="match_parent"
-                android:layout_height="500px"/>
+                android:layout_height="100dp"/>
             <fragment
                 android:id="@+id/feefragment"
                 class="com.example.idreams.practice.ActionBarTab.SchoolOverviewFeeFragment"
                 android:layout_width="match_parent"
-                android:layout_height="500px"
+                android:layout_height="150dp"
+                />
+            <fragment
+                android:id="@+id/rankfragment"
+                class="com.example.idreams.practice.ActionBarTab.SchoolOverviewRankFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 />
             <TextView
                 android:id="@+id/text_school_overview_fragment"
                 android:layout_width="match_parent"
-                android:layout_height="500px"
+                android:layout_height="wrap_content"
                 android:text="TEST TEST TEST"
-                android:textColor="#FFFFFF"
+                android:textColor="#fc0e0c0b"
                 android:textSize="25dp"/>
         </LinearLayout>
     </ScrollView>
