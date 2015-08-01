@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.example.idreams.practice.ActionBarTab.ActionBarTab;
 import com.example.idreams.practice.RecyclerView.MyRecyclerView;
+import com.example.idreams.practice.StartViewPage.HomePage;
+import com.example.idreams.practice.StartViewPage.Startviewpage;
 
 
 public class MainActivity extends AppCompatActivity  {
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity  {
                 "SeekBar",
                 "MyRecyclerView",
                 "ActionBarTab",
-                "E",
+                "SchoolTab",
                 "F",
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -64,6 +66,10 @@ public class MainActivity extends AppCompatActivity  {
                     case 3:
                         Intent intent4 =new Intent(getApplicationContext(),ActionBarTab.class);
                         startActivity(intent4);
+                        break;
+                    case 4:
+                        Intent intent5 =new Intent(getApplicationContext(),HomePage.class);
+                        startActivity(intent5);
                         break;
                 }
                 // Show Alert

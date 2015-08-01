@@ -18,20 +18,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/spacing_huge"
+                    android:layout_height="@dimen/spacing_huge"
                     android:background="@drawable/round_button"
                     android:gravity="center"
                     android:text="100"
                     android:textColor="#fff"
                     android:layout_marginLeft="@dimen/spacing_huge"/>
                 <TextView
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/spacing_huge"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="@dimen/spacing_huge"
                     android:gravity="center"
                     android:text="世界排名"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/font_large"
                     android:layout_marginLeft="@dimen/spacing_huge"/>
             </FrameLayout>
             <FrameLayout
@@ -39,20 +39,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/spacing_huge"
+                    android:layout_height="@dimen/spacing_huge"
                     android:background="@drawable/round_button"
                     android:gravity="center"
                     android:text="18"
                     android:textColor="#fff"
                     android:layout_marginLeft="@dimen/spacing_huge"/>
                 <TextView
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/spacing_huge"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="@dimen/spacing_huge"
                     android:gravity="center"
                     android:text="Times排名"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/font_large"
                     android:layout_marginLeft="@dimen/spacing_huge"/>
             </FrameLayout>
         </LinearLayout>

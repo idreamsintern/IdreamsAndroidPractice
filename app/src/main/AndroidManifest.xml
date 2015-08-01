@@ -52,6 +52,22 @@
             android:name=".ActionBarTab.FirstFragment"
             android:label="@string/title_activity_first_fragment" >
         </activity>
+        <activity
+            android:name=".SchoolTab.SchoolTab"
+            android:label="@string/title_activity_school_tab" >
+        </activity>
+        <activity
+            android:name=".StartViewPage.Startviewpage"
+            android:label="@string/title_activity_startviewpage" >
+        </activity>
+        <activity
+            android:name=".StartViewPage.HomePage"
+            android:label="@string/title_activity_home_page" >
+        </activity>
+        <activity
+            android:name=".StartViewPage.ChooseSchool.WizardActivity"
+            android:label="@string/title_activity_wizard" >
+        </activity>
     </application>
 
 </manifest>
