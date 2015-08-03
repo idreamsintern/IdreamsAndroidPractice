@@ -57,6 +57,10 @@ public class MyRecyclerView extends AppCompatActivity {
         // Set layout manager to position the items
         rvUsers.setLayoutManager(new LinearLayoutManager(this));
         // That's all!
+
+
+
+        //Show divide line
         RecyclerView.ItemDecoration itemDecoration = new
                 DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
         rvUsers.addItemDecoration(itemDecoration);

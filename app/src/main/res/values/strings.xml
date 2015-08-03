@@ -20,4 +20,5 @@
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_school_filter">SchoolFilter</string>
     <string name="title_activity_wizard">WizardActivity</string>
+    <string name="title_activity_rotate_button">RotateButton</string>
 </resources>

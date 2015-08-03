@@ -68,6 +68,10 @@
             android:name=".StartViewPage.ChooseSchool.WizardActivity"
             android:label="@string/title_activity_wizard" >
         </activity>
+        <activity
+            android:name=".RotateButton"
+            android:label="@string/title_activity_rotate_button" >
+        </activity>
     </application>
 
 </manifest>

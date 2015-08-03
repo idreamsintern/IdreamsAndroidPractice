@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity  {
                 "MyRecyclerView",
                 "ActionBarTab",
                 "SchoolTab",
-                "F",
+                "RotateButton",
         };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
@@ -70,6 +70,10 @@ public class MainActivity extends AppCompatActivity  {
                     case 4:
                         Intent intent5 =new Intent(getApplicationContext(),HomePage.class);
                         startActivity(intent5);
+                        break;
+                    case 5:
+                        Intent intent6 =new Intent(getApplicationContext(),RotateButton.class);
+                        startActivity(intent6);
                         break;
                 }
                 // Show Alert
